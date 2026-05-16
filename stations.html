@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Fuel — RS PREMIUM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─── NAVBAR ─────────────────────────────────────── -->
+<nav class="jaza-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">⛽</div>
+    <div class="brand">
+      <span class="brand-name">RS</span>
+      <span class="brand-sub">PREMIUM</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stations.html" class="active">Find Fuel</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="app.html">Mobile App</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+  <button class="btn-jaza-primary d-none d-md-inline-flex" onclick="window.location.href='app.html'">
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+    Download App
+  </button>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="stations.html">Find Fuel</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="app.html">Mobile App</a>
+  <a href="about.html">About Us</a>
+</div>
+
+<!-- ─── PAGE HERO ─────────────────────────────────── -->
+<div class="page-hero" style="padding-top:130px;">
+  <div class="section-tag" style="animation:fadeUp .5s .1s both;">Nearby Stations</div>
+  <h1 style="animation:fadeUp .5s .3s both;">Find <em>Fuel</em> Near You</h1>
+  <p style="animation:fadeUp .5s .5s both;">Showing results near Nairobi, Kenya — sorted by distance</p>
+
+  <!-- Search Bar -->
+  <div class="search-bar" style="margin:40px auto 0;max-width:800px;animation:fadeUp .5s .7s both;">
+    <div class="field">
+      <label>Your Location</label>
+      <div class="field-input">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+        <span>Nairobi, Kenya</span>
+      </div>
+    </div>
+    <div class="field">
+      <label>Fuel Type</label>
+      <div class="field-input">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 22V8a2 2 0 012-2h10a2 2 0 012 2v14"/></svg>
+        <span>Petrol</span>
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+    </div>
+    <div class="field">
+      <label>Radius</label>
+      <div class="field-input">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>10 km</span>
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+    </div>
+    <button class="btn-jaza-primary" style="height:46px;">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      Search
+    </button>
+  </div>
+</div>
+
+<!-- ─── STATIONS GRID ──────────────────────────────── -->
+<section class="jaza-section">
+  <div class="section-header-row reveal">
+    <div>
+      <div class="section-tag">6 Stations Found</div>
+      <h2 class="section-title">Stations Close to You</h2>
+      <p class="section-subtitle">Sorted by distance — updated in real time</p>
+    </div>
+    <div class="d-flex gap-2 flex-wrap">
+      <button class="btn-sm" style="flex:unset;padding:8px 18px;">All</button>
+      <button class="btn-sm primary" style="flex:unset;padding:8px 18px;">Available</button>
+      <button class="btn-sm" style="flex:unset;padding:8px 18px;">Low Stock</button>
+    </div>
+  </div>
+
+  <div class="stations-grid">
+
+    <!-- Card 1 -->
+    <div class="station-card reveal">
+      <div class="card-distance">2.4 km</div>
+      <div class="card-top">
+        <div class="station-logo" style="background:#E8380D;">
+          <span style="color:#fff;font-size:1.1rem;font-weight:900;">TE</span>
+        </div>
+        <div class="card-info">
+          <h3>TotalEnergies</h3>
+          <p>Lang'ata Road, Nairobi</p>
+          <div class="status-badge badge-available"><span class="dot"></span>Available</div>
+        </div>
+      </div>
+      <div class="card-price">
+        <span class="price-val">KES 181.20</span>
+        <span class="price-unit">/L Petrol</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-sm">View Details</button>
+        <button class="btn-sm primary">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="station-card reveal">
+      <div class="card-distance">3.1 km</div>
+      <div class="card-top">
+        <div class="station-logo" style="background:#1B5E20;">
+          <span style="color:#fff;font-size:.8rem;font-weight:900;">RUBIS</span>
+        </div>
+        <div class="card-info">
+          <h3>Rubis Energy</h3>
+          <p>Ngong Road, Nairobi</p>
+          <div class="status-badge badge-available"><span class="dot"></span>Available</div>
+        </div>
+      </div>
+      <div class="card-price">
+        <span class="price-val">KES 180.50</span>
+        <span class="price-unit">/L Petrol</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-sm">View Details</button>
+        <button class="btn-sm primary">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="station-card reveal">
+      <div class="card-distance">4.1 km</div>
+      <div class="card-top">
+        <div class="station-logo" style="background:#FFCF01;">
+          <span style="color:#E8380D;font-size:1.2rem;font-weight:900;">🐚</span>
+        </div>
+        <div class="card-info">
+          <h3>Shell</h3>
+          <p>Mombasa Road, Nairobi</p>
+          <div class="status-badge badge-low"><span class="dot"></span>Low Stock</div>
+        </div>
+      </div>
+      <div class="card-price">
+        <span class="price-val">KES 182.30</span>
+        <span class="price-unit">/L Petrol</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-sm">View Details</button>
+        <button class="btn-sm primary">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="station-card reveal">
+      <div class="card-distance">5.7 km</div>
+      <div class="card-top">
+        <div class="station-logo" style="background:#003DA5;">
+          <span style="color:#fff;font-size:.8rem;font-weight:900;">OiLibya</span>
+        </div>
+        <div class="card-info">
+          <h3>OiLibya</h3>
+          <p>Thika Road, Nairobi</p>
+          <div class="status-badge badge-available"><span class="dot"></span>Available</div>
+        </div>
+      </div>
+      <div class="card-price">
+        <span class="price-val">KES 179.80</span>
+        <span class="price-unit">/L Petrol</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-sm">View Details</button>
+        <button class="btn-sm primary">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="station-card reveal">
+      <div class="card-distance">6.3 km</div>
+      <div class="card-top">
+        <div class="station-logo" style="background:#E8380D;">
+          <span style="color:#fff;font-size:.75rem;font-weight:900;">KENOL</span>
+        </div>
+        <div class="card-info">
+          <h3>Kenol Kobil</h3>
+          <p>Waiyaki Way, Nairobi</p>
+          <div class="status-badge badge-available"><span class="dot"></span>Available</div>
+        </div>
+      </div>
+      <div class="card-price">
+        <span class="price-val">KES 180.90</span>
+        <span class="price-unit">/L Petrol</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-sm">View Details</button>
+        <button class="btn-sm primary">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="station-card reveal">
+      <div class="card-distance">8.2 km</div>
+      <div class="card-top">
+        <div class="station-logo" style="background:#0057A8;">
+          <span style="color:#fff;font-size:.8rem;font-weight:900;">GULF</span>
+        </div>
+        <div class="card-info">
+          <h3>Gulf Energy</h3>
+          <p>Jogoo Road, Nairobi</p>
+          <div class="status-badge badge-closed"><span class="dot"></span>Closed</div>
+        </div>
+      </div>
+      <div class="card-price">
+        <span class="price-val">KES 181.60</span>
+        <span class="price-unit">/L Petrol</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-sm">View Details</button>
+        <button class="btn-sm" style="opacity:.5;cursor:not-allowed;">Closed</button>
+      </div>
+    </div>
+
+  </div><!-- /stations-grid -->
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">⛽</div>
+        <div class="brand">
+          <span class="brand-name">RS</span>
+          <span class="brand-sub">PREMIUM</span>
+        </div>
+      </a>
+      <p>Kenya's most reliable fuel-finding platform. Connecting drivers with verified fuel stations — fast, smart, and always available.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="stations.html">Find Fuel</a></li>
+        <li><a href="stations.html">Price Tracker</a></li>
+        <li><a href="stations.html">Bookings</a></li>
+        <li><a href="app.html">Mobile App</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>For Stations</h4>
+      <ul>
+        <li><a href="about.html">List Your Station</a></li>
+        <li><a href="about.html">Station Dashboard</a></li>
+        <li><a href="about.html">Pricing Plans</a></li>
+        <li><a href="about.html">Partner Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 RS PREMIUM. All rights reserved. <span>Made by Lennox</span></p>
+    <div class="footer-socials">
+      <a href="#" class="social-link" aria-label="Twitter"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="#" class="social-link" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="#" class="social-link" aria-label="Instagram"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

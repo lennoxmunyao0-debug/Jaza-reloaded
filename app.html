@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App — RS PREMIUM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─── NAVBAR ─────────────────────────────────────── -->
+<nav class="jaza-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">⛽</div>
+    <div class="brand">
+      <span class="brand-name">RS</span>
+      <span class="brand-sub">PREMIUM</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="stations.html">Find Fuel</a></li>
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="app.html" class="active">Mobile App</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+  <button class="btn-jaza-primary d-none d-md-inline-flex" onclick="window.location.href='app.html'">
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+    Download App
+  </button>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="stations.html">Find Fuel</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="app.html">Mobile App</a>
+  <a href="about.html">About Us</a>
+</div>
+
+<!-- ─── APP HERO ───────────────────────────────────── -->
+<div class="page-hero" style="padding-top:130px;">
+  <div class="section-tag" style="animation:fadeUp .5s .1s both;">Mobile App</div>
+  <h1 style="animation:fadeUp .5s .3s both;">Fuel on the Go —<br><em>Download the App</em></h1>
+  <p style="animation:fadeUp .5s .5s both;">The RS PREMIUM app puts Kenya's entire fuel network in your pocket. Find, compare, and book fuel in seconds.</p>
+  <div class="d-flex gap-3 justify-content-center flex-wrap mt-4" style="animation:fadeUp .5s .7s both;">
+    <a href="#" class="store-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <div class="store-info"><small>Download on the</small><strong>App Store</strong></div>
+    </a>
+    <a href="#" class="store-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;"><path d="M3.18 23.76c.3.17.65.19.97.05l12.69-7.31-2.88-2.89-10.78 10.15zm-1.9-20.8A1.88 1.88 0 001 4.13v15.74c0 .54.2 1.04.56 1.42l.08.08 8.81-8.81v-.21L1.28 3.04zM21.15 10.1l-2.96-1.71-3.22 3.22 3.22 3.22 2.98-1.72c.85-.49.85-1.29-.02-1.78zM4.15.22L16.84 7.53l-2.88 2.88L3.18.26C3.5.12 3.85.05 4.15.22z"/></svg>
+      <div class="store-info"><small>Get it on</small><strong>Google Play</strong></div>
+    </a>
+  </div>
+</div>
+
+<!-- ─── APP + PHONE SECTION ───────────────────────── -->
+<div class="app-section">
+  <div class="app-text reveal">
+    <div class="section-tag">Why Download?</div>
+    <h2 class="section-title">Everything Fuel — In Your Pocket</h2>
+    <div class="app-features">
+      <div class="app-feature">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+        <span>GPS-powered station finder — accurate to metres</span>
+      </div>
+      <div class="app-feature">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+        <span>Push notifications for price drops &amp; restocks</span>
+      </div>
+      <div class="app-feature">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        <span>Full booking history &amp; digital receipts</span>
+      </div>
+      <div class="app-feature">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V7m0 9v1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Side-by-side fuel price comparison across Kenya</span>
+      </div>
+      <div class="app-feature">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span>Secure bookings at verified, trusted stations</span>
+      </div>
+    </div>
+    <div class="app-ctas">
+      <a href="#" class="store-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <div class="store-info"><small>Download on the</small><strong>App Store</strong></div>
+      </a>
+      <a href="#" class="store-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px;"><path d="M3.18 23.76c.3.17.65.19.97.05l12.69-7.31-2.88-2.89-10.78 10.15zm-1.9-20.8A1.88 1.88 0 001 4.13v15.74c0 .54.2 1.04.56 1.42l.08.08 8.81-8.81v-.21L1.28 3.04zM21.15 10.1l-2.96-1.71-3.22 3.22 3.22 3.22 2.98-1.72c.85-.49.85-1.29-.02-1.78zM4.15.22L16.84 7.53l-2.88 2.88L3.18.26C3.5.12 3.85.05 4.15.22z"/></svg>
+        <div class="store-info"><small>Get it on</small><strong>Google Play</strong></div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Phone Mockup -->
+  <div class="phone-mockup reveal">
+    <div class="phone-frame">
+      <div class="phone-screen">
+        <div class="phone-notch"></div>
+        <div class="phone-content">
+          <div class="phone-header">
+            <span>RS PREMIUM</span>
+            <span style="font-size:.65rem;">🔔</span>
+          </div>
+          <div class="phone-greeting">Hello, John 👋<br>Find Fuel Fast.</div>
+          <div class="phone-field">
+            <small>Your Location</small>
+            <span>📍 Nairobi, Kenya</span>
+          </div>
+          <div class="phone-field">
+            <small>Fuel Type</small>
+            <span>⛽ Petrol ▾</span>
+          </div>
+          <div class="phone-btn">Find Stations</div>
+          <div style="font-size:.68rem;font-weight:700;margin-bottom:10px;display:flex;justify-content:space-between;">
+            <span>Nearby Stations</span>
+            <span style="color:var(--orange);">View all ›</span>
+          </div>
+          <div class="phone-station-item">
+            <div class="phone-station-logo" style="background:#E8380D;color:#fff;">TE</div>
+            <div class="phone-station-info">
+              <strong>TotalEnergies</strong>
+              <small>Lang'ata Rd · <span style="color:var(--green-bright);">● Available</span></small>
+              <small style="color:var(--orange);font-weight:700;">KES 181.20/L</small>
+            </div>
+            <div class="phone-station-dist">2.4 km</div>
+          </div>
+          <div class="phone-station-item">
+            <div class="phone-station-logo" style="background:#1B5E20;color:#fff;font-size:.55rem;">RUBIS</div>
+            <div class="phone-station-info">
+              <strong>Rubis Energy</strong>
+              <small>Ngong Rd · <span style="color:var(--green-bright);">● Available</span></small>
+              <small style="color:var(--orange);font-weight:700;">KES 180.50/L</small>
+            </div>
+            <div class="phone-station-dist">3.1 km</div>
+          </div>
+          <div class="phone-station-item">
+            <div class="phone-station-logo" style="background:#FFCF01;">🐚</div>
+            <div class="phone-station-info">
+              <strong>Shell</strong>
+              <small>Mombasa Rd · <span style="color:#FB923C;">● Low Stock</span></small>
+              <small style="color:var(--orange);font-weight:700;">KES 182.30/L</small>
+            </div>
+            <div class="phone-station-dist">4.7 km</div>
+          </div>
+        </div>
+        <!-- Bottom Nav -->
+        <div style="display:flex;justify-content:space-around;padding:10px 16px 14px;border-top:1px solid var(--border);background:#141414;">
+          <div style="text-align:center;">
+            <div style="font-size:16px;">🏠</div>
+            <div style="font-size:.5rem;color:var(--orange);font-weight:700;">Home</div>
+          </div>
+          <div style="text-align:center;opacity:.5;">
+            <div style="font-size:16px;">📋</div>
+            <div style="font-size:.5rem;color:var(--gray);">Bookings</div>
+          </div>
+          <div style="text-align:center;opacity:.5;">
+            <div style="font-size:16px;">❤️</div>
+            <div style="font-size:.5rem;color:var(--gray);">Favourites</div>
+          </div>
+          <div style="text-align:center;opacity:.5;">
+            <div style="font-size:16px;">👤</div>
+            <div style="font-size:.5rem;color:var(--gray);">Profile</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /app-section -->
+
+<!-- ─── STATS ──────────────────────────────────────── -->
+<div class="stats-band">
+  <div class="reveal">
+    <div class="stat-num">1,200+</div>
+    <div class="stat-label">Stations Nationwide</div>
+  </div>
+  <div class="reveal">
+    <div class="stat-num">4.8 ★</div>
+    <div class="stat-label">App Store Rating</div>
+  </div>
+  <div class="reveal">
+    <div class="stat-num">95,000+</div>
+    <div class="stat-label">Downloads</div>
+  </div>
+  <div class="reveal">
+    <div class="stat-num">Free</div>
+    <div class="stat-label">Always Free to Use</div>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">⛽</div>
+        <div class="brand">
+          <span class="brand-name">RS</span>
+          <span class="brand-sub">PREMIUM</span>
+        </div>
+      </a>
+      <p>Kenya's most reliable fuel-finding platform. Connecting drivers with verified fuel stations — fast, smart, and always available.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="stations.html">Find Fuel</a></li>
+        <li><a href="stations.html">Price Tracker</a></li>
+        <li><a href="stations.html">Bookings</a></li>
+        <li><a href="app.html">Mobile App</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>For Stations</h4>
+      <ul>
+        <li><a href="about.html">List Your Station</a></li>
+        <li><a href="about.html">Station Dashboard</a></li>
+        <li><a href="about.html">Pricing Plans</a></li>
+        <li><a href="about.html">Partner Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 RS PREMIUM. All rights reserved. <span>Made by Lennox</span></p>
+    <div class="footer-socials">
+      <a href="#" class="social-link" aria-label="Twitter"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+      <a href="#" class="social-link" aria-label="Facebook"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="#" class="social-link" aria-label="Instagram"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
